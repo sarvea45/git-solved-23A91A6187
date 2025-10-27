@@ -90,7 +90,7 @@ elif [ "$DEPLOY_ENV" = "experimental" ]; then
 
     # AI pre-deployment analysis
     if [ "$AI_OPTIMIZATION" = true ]; then
-        echo "🤖 Running AI pre-deployment analysis..."
+        echo " Running AI pre-deployment analysis..."
         python3 scripts/ai-analyzer.py --analyze-deployment
         echo "✓ AI analysis complete"
     fi
@@ -135,7 +135,7 @@ elif [ "$DEPLOY_ENV" = "experimental" ]; then
 
     # Chaos engineering
     if [ "$CHAOS_TESTING" = true ]; then
-        echo "⚠️  Running chaos engineering tests..."
+        echo " Running chaos engineering tests..."
         # Chaos monkey logic
     fi
 
